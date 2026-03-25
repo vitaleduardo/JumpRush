@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: ba463ae47b48841baa4a406236740340
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -837853952855807013
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_0
+  - first:
+      213: 6341944863914584869
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_1
+  - first:
+      213: -8931323043592468098
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_2
+  - first:
+      213: -1342065372512954920
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_3
+  - first:
+      213: 7047559930734793761
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_4
+  - first:
+      213: -1289823273688284184
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_5
+  - first:
+      213: -3250485147797247731
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_6
+  - first:
+      213: -2236748912076434068
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_7
+  - first:
+      213: -1016658730409470755
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_8
+  - first:
+      213: -6639870477507571269
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_9
+  - first:
+      213: 6617625019379150893
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_10
+  - first:
+      213: 2186923363725746608
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_11
+  - first:
+      213: -2961457036406066085
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_12
+  - first:
+      213: -1010862286114982582
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_13
+  - first:
+      213: -4278858703628903553
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_14
+  - first:
+      213: 6538694769328103743
+    second: Industrial_assets_tank1_Anim_v1.0_spritesheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 191
+        width: 89
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb6f5ed4485f54f0800000000000000
+      internalID: -837853952855807013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 191
+        width: 89
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bedbea04d130850800000000000000
+      internalID: 6341944863914584869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 191
+        width: 89
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79096413019d0480800000000000000
+      internalID: -8931323043592468098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 191
+        width: 89
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5530e77a6006de0800000000000000
+      internalID: -1342065372512954920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 127
+        width: 89
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12459bcda66fdc160800000000000000
+      internalID: 7047559930734793761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 127
+        width: 89
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e347ccf090a91ee0800000000000000
+      internalID: -1289823273688284184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 127
+        width: 89
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09acd9daf4f3e2d0800000000000000
+      internalID: -3250485147797247731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 126
+        width: 89
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6551fb17b875f0e0800000000000000
+      internalID: -2236748912076434068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 63
+        width: 89
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4d42c654a14e1f0800000000000000
+      internalID: -1016658730409470755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 62
+        width: 89
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1de81faf07ad3a0800000000000000
+      internalID: -6639870477507571269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 63
+        width: 89
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20f4d8b4e686db50800000000000000
+      internalID: 6617625019379150893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 63
+        width: 89
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b120e56633895e10800000000000000
+      internalID: 2186923363725746608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 0
+        width: 89
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b547f6f048ac6e6d0800000000000000
+      internalID: -2961457036406066085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 0
+        width: 88
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45f6474b12b8f1f0800000000000000
+      internalID: -1010862286114982582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 0
+        width: 89
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b5c1eeda07e94c0800000000000000
+      internalID: -4278858703628903553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Industrial_assets_tank1_Anim_v1.0_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 0
+        width: 89
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31a18ccf3c1eba50800000000000000
+      internalID: 6538694769328103743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_0: -837853952855807013
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_1: 6341944863914584869
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_10: 6617625019379150893
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_11: 2186923363725746608
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_12: -2961457036406066085
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_13: -1010862286114982582
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_14: -4278858703628903553
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_15: 6538694769328103743
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_2: -8931323043592468098
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_3: -1342065372512954920
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_4: 7047559930734793761
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_5: -1289823273688284184
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_6: -3250485147797247731
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_7: -2236748912076434068
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_8: -1016658730409470755
+      Industrial_assets_tank1_Anim_v1.0_spritesheet_9: -6639870477507571269
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
