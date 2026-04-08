@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 9f622ef11b8bc4317bb7e2a1b5aad417
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7988695874803050654
+    second: BGFC L2_0
+  - first:
+      213: 2833775883828999208
+    second: BGFC L2_1
+  - first:
+      213: -5047116478811821192
+    second: BGFC L2_2
+  - first:
+      213: 5813055877816940830
+    second: BGFC L2_3
+  - first:
+      213: -3336579766278444899
+    second: BGFC L2_4
+  - first:
+      213: -544203078053687583
+    second: BGFC L2_5
+  - first:
+      213: -7565318339483723015
+    second: BGFC L2_6
+  - first:
+      213: -2121088270248838633
+    second: BGFC L2_7
+  - first:
+      213: 1216396105933741446
+    second: BGFC L2_8
+  - first:
+      213: 3760259892337256837
+    second: BGFC L2_9
+  - first:
+      213: -2275517196366767350
+    second: BGFC L2_10
+  - first:
+      213: 8590249960159611795
+    second: BGFC L2_11
+  - first:
+      213: 8117033255715536521
+    second: BGFC L2_12
+  - first:
+      213: 5605705232229479013
+    second: BGFC L2_13
+  - first:
+      213: -4339527268884340975
+    second: BGFC L2_14
+  - first:
+      213: 1474599038667456341
+    second: BGFC L2_15
+  - first:
+      213: -3800462349865057633
+    second: BGFC L2_16
+  - first:
+      213: 945496195482233887
+    second: BGFC L2_17
+  - first:
+      213: 7015544031692230837
+    second: BGFC L2_18
+  - first:
+      213: 399763527221947755
+    second: BGFC L2_19
+  - first:
+      213: -2820696567168066589
+    second: BGFC L2_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BGFC L2_0
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 833
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98a34c729c8dde60800000000000000
+      internalID: 7988695874803050654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_1
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 834
+        width: 109
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82432b00728935720800000000000000
+      internalID: 2833775883828999208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_2
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 834
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ba664ad4a05f9b0800000000000000
+      internalID: -5047116478811821192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_3
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 834
+        width: 103
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1976c0a58f1ca050800000000000000
+      internalID: 5813055877816940830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_4
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 642
+        width: 180
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98a73a616612b1d0800000000000000
+      internalID: -3336579766278444899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 212
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee8fee0f2a9278f0800000000000000
+      internalID: -544203078053687583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 418
+        width: 93
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa13529d07920790800000000000000
+      internalID: -7565318339483723015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_7
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 418
+        width: 56
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71af19ac4716092e0800000000000000
+      internalID: -2121088270248838633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_8
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 418
+        width: 63
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d595840d181e010800000000000000
+      internalID: 1216396105933741446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_9
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 418
+        width: 25
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58929e903702f2430800000000000000
+      internalID: 3760259892337256837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_10
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 418
+        width: 22
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b14468a2dbb60e0800000000000000
+      internalID: -2275517196366767350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_11
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 418
+        width: 96
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b802f53d2b63770800000000000000
+      internalID: 8590249960159611795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 418
+        width: 15
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ef4fc7dbe75a070800000000000000
+      internalID: 8117033255715536521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_13
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 418
+        width: 30
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562369a55377bcd40800000000000000
+      internalID: 5605705232229479013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 91
+        width: 103
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f1705d0f6e6c3c0800000000000000
+      internalID: -4339527268884340975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_15
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 226
+        width: 127
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ff7ed4304d67410800000000000000
+      internalID: 1474599038667456341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_16
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 226
+        width: 316
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f920c06e0ab024bc0800000000000000
+      internalID: -3800462349865057633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 33
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ca334c7c31f1d00800000000000000
+      internalID: 945496195482233887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_18
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 91
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0902b70283c5160800000000000000
+      internalID: 7015544031692230837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_19
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 91
+        width: 67
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6da83a5fce3c8500800000000000000
+      internalID: 399763527221947755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGFC L2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 688
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb98c6ba6fdad8d0800000000000000
+      internalID: -2820696567168066589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BGFC L2_0: 7988695874803050654
+      BGFC L2_1: 2833775883828999208
+      BGFC L2_10: -2275517196366767350
+      BGFC L2_11: 8590249960159611795
+      BGFC L2_12: 8117033255715536521
+      BGFC L2_13: 5605705232229479013
+      BGFC L2_14: -4339527268884340975
+      BGFC L2_15: 1474599038667456341
+      BGFC L2_16: -3800462349865057633
+      BGFC L2_17: 945496195482233887
+      BGFC L2_18: 7015544031692230837
+      BGFC L2_19: 399763527221947755
+      BGFC L2_2: -5047116478811821192
+      BGFC L2_20: -2820696567168066589
+      BGFC L2_3: 5813055877816940830
+      BGFC L2_4: -3336579766278444899
+      BGFC L2_5: -544203078053687583
+      BGFC L2_6: -7565318339483723015
+      BGFC L2_7: -2121088270248838633
+      BGFC L2_8: 1216396105933741446
+      BGFC L2_9: 3760259892337256837
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
