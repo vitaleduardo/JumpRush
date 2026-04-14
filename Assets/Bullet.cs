@@ -23,20 +23,20 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        // 🧱 Suelo
+        // Suelo
         if (collision.CompareTag("Ground"))
         {
             Destroy(gameObject);
             return;
         }
 
-        // 🚫 Ignorar jugador
+        //  Ignorar jugador
         if (collision.CompareTag("Player"))
         {
             return;
         }
 
-        // 💥 Cualquier otra cosa destruye la bala
+        //  Cualquier otra cosa destruye la bala
         Destroy(gameObject);
     }
 }

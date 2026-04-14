@@ -61,5 +61,8 @@ TagManager:
   - name: arma
     uniqueID: 95530773
     locked: 0
+  - name: objetos
+    uniqueID: 1128484857
+    locked: 0
   m_RenderingLayers:
   - Default
