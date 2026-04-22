@@ -8,14 +8,19 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, lifetime);
+        // Destroy(gameObject, lifetime);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        // 🔍 Buscar enemigo en el objeto o en sus padres
-        Enemy enemy = collision.GetComponentInParent<Enemy>();
+        // 1. Si choca con el jugador o con cualquier cosa que diga "Player", NO hacer nada
+        if (collision.CompareTag("Player"))
+        {
+            return;
+        }
 
+        // 2. Buscar enemigo
+        Enemy enemy = collision.GetComponentInParent<Enemy>();
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
@@ -23,20 +28,10 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        // Suelo
+        // 3. Suelo u otros obstáculos (Asegúrate de que tus plataformas tengan el Tag "Ground")
         if (collision.CompareTag("Ground"))
         {
             Destroy(gameObject);
-            return;
         }
-
-        //  Ignorar jugador
-        if (collision.CompareTag("Player"))
-        {
-            return;
-        }
-
-        //  Cualquier otra cosa destruye la bala
-        Destroy(gameObject);
     }
 }

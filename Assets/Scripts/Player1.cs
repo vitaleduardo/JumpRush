@@ -1,31 +1,38 @@
 using UnityEngine;
-using TMPro; // Necesario para controlar el texto de puntos
+using TMPro;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class Player1 : MonoBehaviour
 {
-    [Header("Referencias")]
-    public HealthBar healthBar; // Asigna aquí HealthBar_BG
-    public TextMeshProUGUI textoPuntos; // Arrastra aquí tu objeto "TextoPuntos" del Canvas
+    [Header("Referencias UI")]
+    public List<Image> listaCorazones;
+    public Sprite corazonLleno;
+    public Sprite corazonVacio;
+    public TextMeshProUGUI textoPuntos;
 
     [Header("Configuración")]
     public int maxHealth = 3;
     public float speed = 6f;
     public float jumpForce = 5f;
-
     public Transform groundCheck;
     public LayerMask groundLayer;
-
     public int maxJumps = 2;
     private int jumpCount;
 
+    [Header("Efectos de Daño")]
+    public float fuerzaRebote = 8f;
+    public GameObject efectoChispa;
+    public AudioSource audioSource;
+    public AudioClip sonidoGolpe;
+
     [Header("Estadísticas")]
     public int health = 3;
-    public int puntos = 0; // Aquí se guardan tus puntos
+    public int puntos = 0;
     private Vector2 checkpoint;
 
     private Rigidbody2D rb;
     private Animator anim;
-
     private bool isGrounded;
     private bool facingRight = true;
 
@@ -33,11 +40,9 @@ public class Player1 : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject smokePrefab;
     public Transform firePoint;
-
     public float fireRate = 0.3f;
     private float nextFireTime = 0f;
-
-    public float invincibleTime = 1f;
+    public float invincibleTime = 1.5f;
     private bool isInvincible = false;
 
     void Start()
@@ -45,15 +50,11 @@ public class Player1 : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+
         health = maxHealth;
-
-        // Actualiza la barra al iniciar si está conectada
-        if (healthBar != null) healthBar.SetHealth(health, maxHealth);
-
-        // Actualiza el texto de puntos al empezar
+        ActualizarCorazones();
         ActualizarInterfazPuntos();
-
-        // Guarda la posición inicial del nivel actual
         checkpoint = transform.position;
     }
 
@@ -78,7 +79,8 @@ public class Player1 : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.UpArrow) && Time.time >= nextFireTime)
+        // Cambio de tecla shoot 
+        if (Input.GetKey(KeyCode.X) && Time.time >= nextFireTime)
         {
             Shoot();
             nextFireTime = Time.time + fireRate;
@@ -89,21 +91,42 @@ public class Player1 : MonoBehaviour
         else if (move < 0 && facingRight) Flip();
     }
 
-    // --- SISTEMA DE PUNTOS ---
-    public void GanarPuntos(int cantidad)
+    void ActualizarCorazones()
     {
-        puntos += cantidad;
-        ActualizarInterfazPuntos();
+        for (int i = 0; i < listaCorazones.Count; i++)
+        {
+            listaCorazones[i].sprite = (i < health) ? corazonLleno : corazonVacio;
+        }
+    }
+
+    public void TakeDamage(int damage, Vector2 posicionEnemigo)
+    {
+        if (isInvincible) return;
+
+        health -= damage;
+        ActualizarCorazones();
+
+        // 1. SONIDO
+        if (audioSource != null && sonidoGolpe != null)
+            audioSource.PlayOneShot(sonidoGolpe);
+
+        // 2. CHISPA
+        if (efectoChispa != null)
+            Instantiate(efectoChispa, transform.position, Quaternion.identity);
+
+        // 3. REBOTE
+        Vector2 direccionEmpuje = (new Vector2(transform.position.x, transform.position.y) - posicionEnemigo).normalized;
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(direccionEmpuje * fuerzaRebote, ForceMode2D.Impulse);
+
+        if (health <= 0) Die();
+        else StartCoroutine(Invincibility());
     }
 
     void ActualizarInterfazPuntos()
     {
-        if (textoPuntos != null)
-        {
-            textoPuntos.text = "Puntos: " + puntos;
-        }
+        if (textoPuntos != null) textoPuntos.text = "Puntos: " + puntos;
     }
-    // -------------------------
 
     void Flip()
     {
@@ -117,39 +140,16 @@ public class Player1 : MonoBehaviour
     {
         float direction = facingRight ? 1f : -1f;
         if (smokePrefab != null) Instantiate(smokePrefab, firePoint.position, firePoint.rotation);
-
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
-
-        if (rbBullet != null)
-        {
-            float bSpeed = 10f;
-            rbBullet.linearVelocity = new Vector2(direction * bSpeed, 0f);
-        }
-
-        Collider2D bulletCol = bullet.GetComponent<Collider2D>();
-        Collider2D playerCol = GetComponent<Collider2D>();
-
-        if (bulletCol != null && playerCol != null) Physics2D.IgnoreCollision(bulletCol, playerCol);
+        if (rbBullet != null) rbBullet.linearVelocity = new Vector2(direction * 20f, 0f);
+        Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
-        {
-            TakeDamage(1);
-        }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        if (isInvincible) return;
-
-        health -= damage;
-        if (healthBar != null) healthBar.SetHealth(health, maxHealth);
-
-        if (health <= 0) Die();
-        else StartCoroutine(Invincibility());
+            TakeDamage(1, collision.transform.position);
     }
 
     System.Collections.IEnumerator Invincibility()
@@ -163,11 +163,8 @@ public class Player1 : MonoBehaviour
     {
         transform.position = checkpoint;
         health = maxHealth;
-        if (healthBar != null) healthBar.SetHealth(health, maxHealth);
+        ActualizarCorazones();
         rb.linearVelocity = Vector2.zero;
-        gameObject.SetActive(true);
         StartCoroutine(Invincibility());
-
-        //los puntos no se reinician al morir
     }
 }
