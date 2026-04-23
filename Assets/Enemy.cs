@@ -8,11 +8,17 @@ public class Enemy : MonoBehaviour
     public EnemySpawner spawner;
     public int health = 1;
     public int damage = 1;
+
+    [Header("Puntuación")]
+    public int puntosAlMorir = 50; // Cantidad de puntos que otorga este enemigo
+
     private Rigidbody2D rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        // Si no se asignó el jugador en el inspector, lo buscamos por Tag
         if (player == null)
         {
             GameObject p = GameObject.FindGameObjectWithTag("Player");
@@ -23,11 +29,13 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         if (player == null) return;
+
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= detectionRange)
         {
             Vector2 direction = (player.position - transform.position).normalized;
+            // Usamos linearVelocity (o velocity según tu versión de Unity)
             rb.linearVelocity = direction * speed;
         }
         else
@@ -44,7 +52,16 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        // NOTIFICAR AL GAMEMANAGER PARA SUMAR PUNTOS
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.SumarPuntos(puntosAlMorir);
+        }
+
+        // Notificar al spawner si existe
         if (spawner != null) spawner.EnemyDied();
+
+        // Destruir el objeto del enemigo
         Destroy(gameObject);
     }
 
@@ -55,7 +72,7 @@ public class Enemy : MonoBehaviour
             Player1 playerScript = collision.gameObject.GetComponent<Player1>();
             if (playerScript != null)
             {
-                // CORRECCIÓN AQUÍ: Pasamos daño y posición
+                // Pasamos daño y posición para el efecto de rebote
                 playerScript.TakeDamage(damage, transform.position);
                 Debug.Log("💥 Enemy hizo daño y causó rebote");
             }

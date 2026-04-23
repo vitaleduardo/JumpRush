@@ -9,12 +9,12 @@ public class Player1 : MonoBehaviour
     public List<Image> listaCorazones;
     public Sprite corazonLleno;
     public Sprite corazonVacio;
-    public TextMeshProUGUI textoPuntos;
+    // Ya no necesitamos textoPuntos aquí, lo maneja el GameManager
 
     [Header("Configuración")]
     public int maxHealth = 3;
     public float speed = 6f;
-    public float jumpForce = 5f;
+    public float jumpForce = 12f; // Asegúrate de que este valor sea suficiente para saltar
     public Transform groundCheck;
     public LayerMask groundLayer;
     public int maxJumps = 2;
@@ -28,7 +28,6 @@ public class Player1 : MonoBehaviour
 
     [Header("Estadísticas")]
     public int health = 3;
-    public int puntos = 0;
     private Vector2 checkpoint;
 
     private Rigidbody2D rb;
@@ -54,13 +53,15 @@ public class Player1 : MonoBehaviour
 
         health = maxHealth;
         ActualizarCorazones();
-        ActualizarInterfazPuntos();
+
+        // BORRAMOS: ActualizarInterfazPuntos(); -> Esto lo hace el GameManager solo
+
         checkpoint = transform.position;
     }
 
     void Update()
     {
-        float move = Input.GetAxis("Horizontal");
+        float move = Input.GetAxisRaw("Horizontal"); // GetAxisRaw es más preciso para plataformas
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
@@ -79,7 +80,6 @@ public class Player1 : MonoBehaviour
             }
         }
 
-        // Cambio de tecla shoot 
         if (Input.GetKey(KeyCode.X) && Time.time >= nextFireTime)
         {
             Shoot();
@@ -93,9 +93,11 @@ public class Player1 : MonoBehaviour
 
     void ActualizarCorazones()
     {
+        if (listaCorazones == null || listaCorazones.Count == 0) return;
         for (int i = 0; i < listaCorazones.Count; i++)
         {
-            listaCorazones[i].sprite = (i < health) ? corazonLleno : corazonVacio;
+            if (listaCorazones[i] != null)
+                listaCorazones[i].sprite = (i < health) ? corazonLleno : corazonVacio;
         }
     }
 
@@ -106,26 +108,25 @@ public class Player1 : MonoBehaviour
         health -= damage;
         ActualizarCorazones();
 
-        // 1. SONIDO
         if (audioSource != null && sonidoGolpe != null)
             audioSource.PlayOneShot(sonidoGolpe);
 
-        // 2. CHISPA
         if (efectoChispa != null)
             Instantiate(efectoChispa, transform.position, Quaternion.identity);
 
-        // 3. REBOTE
         Vector2 direccionEmpuje = (new Vector2(transform.position.x, transform.position.y) - posicionEnemigo).normalized;
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(direccionEmpuje * fuerzaRebote, ForceMode2D.Impulse);
 
-        if (health <= 0) Die();
-        else StartCoroutine(Invincibility());
-    }
-
-    void ActualizarInterfazPuntos()
-    {
-        if (textoPuntos != null) textoPuntos.text = "Puntos: " + puntos;
+        if (health <= 0)
+        {
+            if (GameManager.instance != null) GameManager.instance.PerderVida();
+            Die();
+        }
+        else
+        {
+            StartCoroutine(Invincibility());
+        }
     }
 
     void Flip()
@@ -143,7 +144,10 @@ public class Player1 : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
         if (rbBullet != null) rbBullet.linearVelocity = new Vector2(direction * 20f, 0f);
-        Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+
+        Collider2D bulletCol = bullet.GetComponent<Collider2D>();
+        Collider2D playerCol = GetComponent<Collider2D>();
+        if (bulletCol != null && playerCol != null) Physics2D.IgnoreCollision(bulletCol, playerCol);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
